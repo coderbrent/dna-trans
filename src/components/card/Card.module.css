@@ -1,0 +1,14 @@
+.cardContainer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: block;
+  background-color: rgb(57, 57, 57);
+  color: white;
+  padding: 3rem;
+  width: 100%;
+}
+
+.cardHeader {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3em;
+}
+

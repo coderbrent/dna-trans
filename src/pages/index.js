@@ -1,21 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
+import Header from '../components/header'
 import SEO from "../components/seo"
+import HeroBanner from '../components/hero-banner/HeroBanner'
+import Section from '../components/section/Section'
 
 const IndexPage = () => (
-  <Layout>
+  <>
+  <Header siteTitle="DNA Transportation LLC" />
+  <HeroBanner />
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+      <div style={{ margin: `0 2rem` }}>
+        <Section />
+      </div>
+  </>
 )
 
-export default IndexPage
+export default IndexPage;
+

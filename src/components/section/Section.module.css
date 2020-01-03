@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+
+.heading {
+  color: darkred;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 7rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
