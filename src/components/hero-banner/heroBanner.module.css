@@ -1,3 +1,4 @@
+
 .bannerDisplay {
   display: grid;
   grid-template-columns: 1fr 1fr 3fr;
@@ -6,7 +7,6 @@
   background-position: fixed;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 75%;
   width: 100%;
   align-items: center;
 }

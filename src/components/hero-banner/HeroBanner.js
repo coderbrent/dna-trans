@@ -4,15 +4,17 @@ import QuotePanel from '../quote-panel/QuotePanel'
 
 const HeroBanner = () => {
   return (
-    <div className={classes.bannerDisplay}>
-      <div>
-        <QuotePanel />
+    <div className={classes.overlay}>
+      <div className={classes.bannerDisplay}>
+        <div>
+          <QuotePanel />
+        </div>
+        <div>
+        </div>
+          <h1 className={classes.bigTitle}>
+            Hot Shot Trucking. Expedited Shipping. World Class Service.
+          </h1>
       </div>
-      <div>
-      </div>
-      <h1 className={classes.bigTitle}>
-        We Got Your Hot Shot Trucking Right Here.
-      </h1>
     </div>
   )
 }

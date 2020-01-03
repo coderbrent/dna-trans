@@ -24,31 +24,31 @@ const Image = () => {
   return (
     <>
     <h1 className={classes.heading}> 
-        What We Do. 
-      </h1>
-      <div className={classes.container}>
-        <div>
+      What We Do.
+    </h1>
+    <div className={classes.container}>
+      <div>
         <Image />
         <Card
           title={'Hot Shot Trucking'}
           content={'Blah bla bla blah'}
         />
-        </div>
-        <div>
+      </div>
+      <div>
         <Image />
         <Card
           title={'18 Wheelers'}
           content={'Blah bla bla blah'}
         />
-        </div>
-        <div>
+      </div>
+      <div>
         <Image />
         <Card
           title={'Expedited Shippingz'}
           content={'Blah bla bla blah'}
         />
       </div>
-      </div>
+    </div>
     </>
   )
 }

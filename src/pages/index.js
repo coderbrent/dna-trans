@@ -8,10 +8,8 @@ const IndexPage = () => (
   <>
   <Header siteTitle="DNA Transportation LLC" />
   <HeroBanner />
-    <SEO title="Home" />
-      <div style={{ margin: `0 2rem` }}>
-        <Section />
-      </div>
+  <SEO title="Home" />
+    <Section />
   </>
 )
 

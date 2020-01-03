@@ -11,7 +11,8 @@
 .header {
   font-family: Arial;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   padding: .8em;
 }
 
@@ -27,7 +28,7 @@ label {
 }
 
 .bodyText {
-  font-size: smaller;
+  font-size: medium;
   margin-left: 1.5rem;
 }
 
