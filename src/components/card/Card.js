@@ -5,9 +5,6 @@ const Card = ({ title, content, image }) => {
 
   return (
     <div className={classes.cardContainer}>
-      <div className={classes.imageCap}> 
-        <img src={image} />
-      </div>
       <h3 className={classes.cardHeader}> 
         { title }
       </h3>
