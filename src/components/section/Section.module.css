@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
-  margin: 0 auto;
+  margin: 0 3em;
 }
 
 .heading {
@@ -13,7 +13,11 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 1100px) {
+.cardContainer {
+  margin: 0em 3em;
+}
+
+@media only screen and (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
     justify-items: center;

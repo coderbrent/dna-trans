@@ -18,7 +18,7 @@ const Image = () => {
       }
     }
   `)
-    return <Img fixed={truck.placeholderImage.childImageSharp.fixed} alt="image of a large truck"/>
+    return <Img fixed={truck.placeholderImage.childImageSharp.fixed} alt="large truck"/>
   }
 
   return (
@@ -27,21 +27,21 @@ const Image = () => {
       What We Do.
     </h1>
     <div className={classes.container}>
-      <div>
+      <div className={classes.cardContainer}>
         <Image />
         <Card
           title={'Hot Shot Trucking'}
-          content={'Blah bla bla blah'}
+          content={'Place custom content or verbiage HERE'}
         />
       </div>
-      <div>
+      <div className={classes.cardContainer}>
         <Image />
         <Card
           title={'18 Wheelers'}
           content={'Blah bla bla blah'}
         />
       </div>
-      <div>
+      <div className={classes.cardContainer}>
         <Image />
         <Card
           title={'Expedited Shippingz'}
@@ -52,6 +52,7 @@ const Image = () => {
     </>
   )
 }
+
 
 
 export default Section;

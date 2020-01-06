@@ -1,0 +1,7 @@
+[
+    {
+        "nodeId": "1",
+        "nodeType": "firstBox",
+        "content": "This is some content that we can query with GraphQL."
+    }
+]

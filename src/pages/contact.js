@@ -6,7 +6,6 @@ export default () => (
     <div>
       <h1>Contact Us</h1>
       <p>
-        
         <a href="mailto:info@dnatransllc.com">info@dnatransllc.com</a>
       </p>
     </div>
