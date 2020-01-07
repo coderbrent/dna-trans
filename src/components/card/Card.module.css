@@ -1,8 +1,8 @@
 .cardContainer {
   font-family: Roboto;
   display: block;
-  background-color: rgb(57, 57, 57);
-  color: white;
+  background-color: rgb(171, 171, 171);
+  color: rgb(55, 55, 55);
   padding: 1rem;
   max-width: 250px;
   max-height: 200px;
@@ -11,5 +11,14 @@
 .cardHeader {
   font-family: Roboto;
   font-size: 1.25rem;
+}
+
+.cardButton {
+  font-variant-caps: all-petite-caps;
+  font-size: smaller;
+  background-color: darkred;
+  color: white;
+  border: none;
+  border-radius: 5pt;
 }
 

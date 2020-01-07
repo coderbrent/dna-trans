@@ -2,7 +2,6 @@ import React from 'react';
 import classes from '../card/Card.module.css'
 
 const Card = ({ title, content }) => {
-
   return (
     <div className={classes.cardContainer}>
       <h3 className={classes.cardHeader}> 
@@ -11,6 +10,7 @@ const Card = ({ title, content }) => {
       <p className={classes.cardContent}>
         { content }
       </p>
+      <button className={classes.cardButton}>Learn More</button>
     </div>
   )
 }
