@@ -3,11 +3,16 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout>
-    <div>
-      <h1>Contact Us</h1>
-      <p>
-        <a href="mailto:info@dnatransllc.com">info@dnatransllc.com</a>
+    <div className="section padding-medium">
+      <h1 className="title">
+        Contact Us
+      </h1>
+      <p className="content">
+        <form>
+          
+        </form>
       </p>
+      
     </div>
   </Layout>
 )

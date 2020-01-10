@@ -1,11 +1,12 @@
 .panel {
+  position: absolute;
   font-family: Roboto;
   display: block;
   background-color: rgba(0, 0, 0, 0.628);
   padding: 1em;
-  margin: 1em;
   color: white;
   width: 400px;
+  margin: 0em 1em;
 }
 
 .header {
@@ -20,6 +21,7 @@
   display: inline-flex;
   flex-direction: column;
   padding-left: 1em;
+  justify-items: center;
 }
 
 label {

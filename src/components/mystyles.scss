@@ -1,0 +1,68 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+@import url('https://fonts.googleapis.com/css?family=Alata:400,700');
+$title-color: #181818;
+$title-family: 'Alata';
+$title-size: 2.75rem;
+$title-main-color: rgb(36, 36, 36);
+
+@import "~bulma/bulma.sass";
+
+$purple: rgb(138, 77, 77);
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: rgb(255, 255, 255);
+$primary: darkred;
+$background: darkred;
+$family-sans-serif: 'Ubuntu', sans-serif;
+
+$navbar-background-color: darkred;
+
+.navbar {
+    background-color: darkred;
+}
+
+.sub-title {
+    font-family: 'Ubuntu';
+    font-size: 1.45rem;
+    font-variant-caps: all-petite-caps;
+}
+
+.display-title {
+    font-family: 'Alata';
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.display {
+    padding: 3em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.646), rgba(0, 0, 0, 0.05));
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.cta-button {
+    font-family: 'Ubuntu';
+    font-weight: 600;
+    font-size: smaller;
+    padding: .35em .5em;
+    margin: 1em 0em;
+    border-radius: 3pt;
+    font-size: 1.25rem;
+    font-variant-caps: all-small-caps;
+    background-color: hsl(141, 71%, 48%);
+    color: rgb(255, 255, 255);
+    border: none;
+    z-index: 10;
+}
+
+.cta-button:hover {
+    background-color: darkgreen;
+}

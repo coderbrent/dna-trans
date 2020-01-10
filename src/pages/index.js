@@ -1,15 +1,25 @@
 import React from "react"
-import Header from '../components/header'
 import SEO from "../components/seo"
-import HeroBanner from '../components/hero-banner/HeroBanner'
-import Section from '../components/section/Section'
+import Layout from '../components/layout'
+import InfoSection from '../components/info-section'
+import HeroImage from '../components/HeroImage'
+
+export const query = graphql`
+  query SiteMeta {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+}`
 
 const IndexPage = () => (
   <>
-  <Header siteTitle="DNA Transportation LLC" />
-  <HeroBanner />
-  <SEO title="Home" />
-    <Section />
+  <Layout>
+    <SEO title="Home" />
+      <InfoSection />
+  </Layout>
   </>
 )
 
