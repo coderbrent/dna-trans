@@ -9,7 +9,7 @@ const InfoSection = () => {
     allImageSharp {
       edges {
         node {
-          fluid(sizes: "600") {
+          fluid(sizes: "225") {
             ...GatsbyImageSharpFluid
           }
         }
@@ -27,7 +27,7 @@ const InfoSection = () => {
       <p className="subtitle" style={{ marginLeft: '5px'}}>
         Experienced, Reasonable, Friendly
       </p>
-        <p className="content">If you are looking for an experienced, qualified, and licensed trucking company in Charlotte to take care of your logistic needs locally or interstate, you’ve come to the right place.  Large or small cargo, it’s best to hire a professional trucking company that has the ability to guarantee the safe delivery of your materials and freight.  We realize timely delivery of your expedited freight and materials helps to keep you projects and deadlines on target. </p>
+        <p className="content" style={{ marginLeft: '5px'}}>If you are looking for an experienced, qualified, and licensed trucking company in Charlotte to take care of your logistic needs locally or interstate, you’ve come to the right place.  Large or small cargo, it’s best to hire a professional trucking company that has the ability to guarantee the safe delivery of your materials and freight.  We realize timely delivery of your expedited freight and materials helps to keep you projects and deadlines on target. </p>
         <button type="button" className="button is-success" style={{ marginRight: '10px'}}>Get A Quote</button>
         <button type="button" className="button is-info">Frequently Asked Questions</button>
 

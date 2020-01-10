@@ -8,10 +8,10 @@ const BackgroundSection = ({ className }) => (
   <StaticQuery
     query={graphql`
       query {
-        desktop: file(relativePath: { eq: "hero-banner.jpg" }) {
+        desktop: file(relativePath: { eq: "parked-trucks-under-clouds-charlote-nc-trucking.jpg" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 1920) {
-              ...GatsbyImageSharpFluid_withWebp
+            fluid(quality: 90, maxWidth: 1920) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -30,12 +30,18 @@ const BackgroundSection = ({ className }) => (
             <div className="container is-fluid">
               <div className="display">
                 <div className="display-title">
-                  Top Quality Trucking Company in Charlotte NC For You
+                  Your Free Quote
                 </div>
                 <div className="sub-title">
                   Expedited Shipping, Hot Shot Trucking, 18 Wheelers and More...
                 </div>
-                <Link to='/quote'><input type="button" className="cta-button" value="Get A Fast & Free Quote" /></Link>
+                <Link to='/apply'>
+                  <input 
+                    type="button" 
+                    className="cta-button" 
+                    value="Get A Fast & Free Quote"
+                  />
+                </Link>
               </div>
             </div>
           </BackgroundImage>
@@ -45,7 +51,7 @@ const BackgroundSection = ({ className }) => (
   />
 )
 
-const HeroImage = styled(BackgroundSection)`
+const QuoteBanner = styled(BackgroundSection)`
   width: 100%;
   height: 100%;
   position: absolute;
@@ -54,4 +60,4 @@ const HeroImage = styled(BackgroundSection)`
   background-size: cover;
   background-attachment: center;
 `
-export default HeroImage
+export default QuoteBanner

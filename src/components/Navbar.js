@@ -45,6 +45,9 @@ const Navbar = () => {
         <Link className="navbar-item has-text-white" to="/apply" >
           Apply to Drive
         </Link>
+        <Link className="navbar-item has-text-white" to="/quote" >
+          Quote
+        </Link>
       </div>
       <div className="navbar-end">
         <div className="navbar-item">
