@@ -23,12 +23,12 @@ const Layout = ({ children }) => {
       <HeroImage />
       <div style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: 1200,
           padding: `0px auto`,
           paddingTop: 0,
         }}
       >
-      <div>{children}</div>
+        <div>{children}</div>
       </div>
       <Footer title={data.site.siteMetadata.title} />
     </>

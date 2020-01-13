@@ -10,9 +10,7 @@ const Card = ({ title, content, subTitle, fluid }) => {
     <div className="card">
     <div className="card-image">
       <figure className="image is-180x180">
-        <div style={{ width: `360px`}}>
           <Img fluid={fluid} alt="Placeholder image"/>
-        </div>
       </figure>
     </div>
     <div className="card-content">

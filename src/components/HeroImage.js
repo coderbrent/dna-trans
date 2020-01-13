@@ -10,7 +10,7 @@ const BackgroundSection = ({ className }) => (
       query {
         desktop: file(relativePath: { eq: "hero-banner.jpg" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 1920) {
+            fluid(quality: 100, maxWidth: 3200) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -25,7 +25,6 @@ const BackgroundSection = ({ className }) => (
             Tag="section"
             className={className}
             fluid={imageData}
-            backgroundColor={`black`}
           >
             <div className="container is-fluid">
               <div className="display">
