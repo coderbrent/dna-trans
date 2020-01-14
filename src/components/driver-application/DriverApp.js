@@ -13,7 +13,7 @@ const DriverApp = () => {
       netlify
     >
       
-    <input type="hidden" name="application" value="application"/>
+    <input type="hidden" name="form-name" value="application"/>
       
       <div className="field">
         <label className="label">Name</label>
