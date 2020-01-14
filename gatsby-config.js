@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `DNA Transportation LLC`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `North Carolina's premier hot shot trucking and expedited shipping company.`,
+    author: `@brenta1283`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -42,7 +42,13 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },  
     },
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-156186170-1",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

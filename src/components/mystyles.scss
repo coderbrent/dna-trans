@@ -17,9 +17,7 @@ $primary: darkred;
 $background: darkred;
 $family-sans-serif: 'Ubuntu', sans-serif;
 
-$navbar-background-color: darkred;
-
-.navbar {
+.navbar, .navbar-brand, .navbarBasicExample, .navbar-start {
     background-color: darkred;
 }
 
