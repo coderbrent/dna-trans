@@ -14,16 +14,13 @@ const FAQMenu = ({ answers, questions }) => {
 
   return(
     <>
-    <div 
-      className="box" 
-      onClick={toggleAnswer}
-    >
+    <div className="box que" onClick={toggleAnswer}>
       <div className="question">
         { questions }
       </div>
     </div>
-    <div 
-      className={ visible ? "notification is-success" : "hidden" }
+    <div
+      className={ visible ? "notification is-success" : "hidden" } 
       onClick={toggleAnswer}
     >
       { answers }
