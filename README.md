@@ -34,5 +34,6 @@
   <li>Further compress heavier images</li>
   <li>Add social media link/icons to footer</li>
   <li>Specify Bulma component imports to trim down bundle (see mystyles.scss)</li>
+  <li>Convert index page content display into map function</li>
 </ul>
 
