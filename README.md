@@ -4,7 +4,7 @@
   This website is being built for a private business. The client has expressed interest in increasing their search engine ranking to bring in more business online.
 </p>
 <p>
-  That being the case, I decided to develop the site on JAMStack tech - specifically, a statically generated Gatsby/React/GraphQL build deployed to Netlify. 
+  That being the case, I decided to develop the site on JAMStack tech - specifically,a statically generated Gatsby/React/GraphQL build deployed to Netlify. 
 </p>
 
 <h3>Why?</h3>
