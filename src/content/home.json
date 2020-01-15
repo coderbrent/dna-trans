@@ -1,0 +1,62 @@
+[
+  {
+    "nodeID": 1,
+    "nodeName": "sectionContent",
+    "nodeContent": "If you are looking for an experienced, qualified, and licensed trucking company in Charlotte to take care of your logistic needs locally or interstate, you’ve come to the right place.  Large or small cargo, it’s best to hire a professional trucking company that has the ability to guarantee the safe delivery of your materials and freight.  We realize timely delivery of your expedited freight and materials helps to keep you projects and deadlines on target."
+  },
+  {
+    "nodeID": 2,
+    "nodeName": "sectionTitle",
+    "nodeContent": "Trucking You Can Count On."
+  },
+  {
+    "nodeID": 3,
+    "nodeName": "sectionSubTitle",
+    "nodeContent": "Experienced, Reasonable, Friendly"
+  },
+  {
+    "nodeID": 4,
+    "nodeName": "card1Title",
+    "nodeContent": "Hot Shot Trucking"
+  },
+  {
+    "nodeID": 5,
+    "nodeName": "card1SubTitle",
+    "nodeContent": "27 years in the business"
+  },
+  {
+    "nodeID": 6,
+    "nodeName": "card1Body",
+    "nodeContent": "If you are looking for an experienced, qualified, and licensed trucking company in Charlotte to take care of your logistic needs locally or interstate, you’ve come to the right place."
+  },
+  {
+    "nodeID": 7,
+    "nodeName": "card2Title",
+    "nodeContent": "Expedited Shipping"
+  },
+  {
+    "nodeID": 8,
+    "nodeName": "card2SubTitle",
+    "nodeContent": "Large, Small, Expedited"
+  },
+  {
+    "nodeID": 9,
+    "nodeName": "card2Body",
+    "nodeContent": "Large or small cargo, it’s best to hire a professional trucking company that has the ability to guarantee the safe delivery of your materials and freight."
+  },
+  {
+    "nodeID": 10,
+    "nodeName": "card3Title",
+    "nodeContent": "Box Trucks"
+  },
+  {
+    "nodeID": 11,
+    "nodeName": "card3SubTitle",
+    "nodeContent": "Large, Small, Expedited"
+  },
+  {
+    "nodeID": 12,
+    "nodeName": "card3Body",
+    "nodeContent": "There are numerous trucking companies in Charlotte. But not all of them are created equal. Many Charlotte Trucking companies are skilled, but they lack the logistic expertise needed to anticipate, overcome, and work through any obstacle. That is where DNA Transportation comes in."
+  }
+]

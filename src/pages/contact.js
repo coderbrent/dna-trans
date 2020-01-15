@@ -13,26 +13,38 @@ export default () => {
         <h1 className="title">
           Contact Us
         </h1>
-        <p className="content">
+  {/* STYLING: if a tag has more than 2! attributes, return each attr to a new line */}
           <form>
             <div className="field">
-            <label className="label">Name</label>
-              <div className="control">
-                <input className="input" type="text" placeholder="Your Name" />
+            <label className="label" htmlFor="name">Name</label>
+              <div className="control" id="name">
+                <input 
+                  className="input" 
+                  type="text" 
+                  placeholder="Your Name" 
+                />
               </div>
             </div>
 
             <div className="field">
-            <label className="label">E-Mail</label>
-              <div className="control">
-                <input className="input" type="email" placeholder="E-Mail Address" />
+            <label className="label" htmlFor="email">E-Mail</label>
+              <div className="control" id="email">
+                <input 
+                  className="input" 
+                  type="email" 
+                  placeholder="E-Mail Address" 
+                />
               </div>
             </div>
 
             <div className="field">
-            <label className="label">Message</label>
+            <label className="label" htmlFor="message">Message</label>
               <div className="control">
-                <textarea className="textarea" placeholder="Drop us a line!"></textarea>
+                <textarea 
+                  className="textarea" 
+                  id="message" 
+                  placeholder="Drop us a line!">
+                </textarea>
               </div>
             </div>
             
@@ -40,7 +52,7 @@ export default () => {
               <button className="button is-primary">Submit</button>
             </div>
           </form>
-        </p>
+
       </div>
     </Layout>
   </>

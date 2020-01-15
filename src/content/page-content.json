@@ -1,7 +1,0 @@
-[
-    {
-        "pageID": "1",
-        "pageName": "index",
-        "box1": "This is some content that we can query with GraphQL."
-    }
-]

@@ -31,8 +31,8 @@ const Navbar = () => {
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link to="/"><Img fixed={data.placeholderImage.childImageSharp.fixed} /></Link>
-        <a
-          role="button" 
+        <button
+          style={{ border: 'none', backgroundColor: 'transparent'}}
           className={ !isActive ? "navbar-burger burger is-active" : "navbar-burger burger" }
           aria-label="menu"
           aria-expanded="false"
@@ -42,7 +42,7 @@ const Navbar = () => {
           <span aria-hidden="false"></span>
           <span aria-hidden="false"></span>
           <span aria-hidden="false"></span>
-        </a>
+        </button>
       </div>
     
       <div id="navbarBasicExample" className={ !isActive ? "navbar-menu is-active" : "navbar-menu"}>
