@@ -2,7 +2,8 @@ import React from "react"
 import SEO from "../components/seo"
 import Layout from '../components/layout'
 import InfoSection from '../components/info-section'
-import HeroImage from '../components/HeroImage'
+import Navbar from '../components/Navbar'
+import HomeBanner from '../components/page-banners/HomeBanner'
 
 export const query = graphql`
   query SiteMeta {
@@ -16,6 +17,8 @@ export const query = graphql`
 
 const IndexPage = () => (
   <>
+  <Navbar />
+  <HomeBanner />
   <Layout>
     <SEO title="Home" />
       <InfoSection />

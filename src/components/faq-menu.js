@@ -14,7 +14,7 @@ const FAQMenu = ({ answers, questions }) => {
 
   return(
     <>
-    <div className="box que" onClick={toggleAnswer}>
+    <div className="box que" style={{ margin: `2px`}} onClick={toggleAnswer}>
       <div className="question">
         { questions }
       </div>
@@ -22,6 +22,7 @@ const FAQMenu = ({ answers, questions }) => {
     <div
       className={ visible ? "notification is-success" : "hidden" } 
       onClick={toggleAnswer}
+      style={{ margin: `2px`}}
     >
       { answers }
     </div>

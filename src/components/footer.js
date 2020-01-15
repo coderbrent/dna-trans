@@ -8,10 +8,10 @@ const Footer = ({ title }) => {
     <>
       <div className="footer">
         <div className="columns">
-          <div className="column">
+          <div className="column has-text-centered">
             <Logo />
           </div>
-        <div className="column">
+        <div className="column is-half">
             <p className="content gray">
               { title }
               <p>726 J Montana Drive, Charolette, NC 28216</p>
@@ -20,7 +20,7 @@ const Footer = ({ title }) => {
               MC: 69183
             </p>
         </div>
-        <div className="column">
+        <div className="column border-left">
           <div className="footer-links">
             <Link className="footer-items" to="/">Home</Link>
             <Link className="footer-items" to="/about">About</Link>

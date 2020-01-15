@@ -1,8 +1,8 @@
 import React from 'react'
-import { graphql, StaticQuery, Link } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
-import '../components/mystyles.scss'
+import '../mystyles.scss'
 
 const BackgroundSection = ({ className }) => (
   <StaticQuery
@@ -10,7 +10,7 @@ const BackgroundSection = ({ className }) => (
       query {
         desktop: file(relativePath: { eq: "parked-trucks-under-clouds-charlote-nc-trucking.jpg" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
+            fluid(quality: 90, maxWidth: 3200) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -25,23 +25,15 @@ const BackgroundSection = ({ className }) => (
             Tag="section"
             className={className}
             fluid={imageData}
-            backgroundColor={`black`}
           >
             <div className="container is-fluid">
               <div className="display">
                 <div className="display-title">
-                  Your Free Quote
+                  Price Quote
                 </div>
                 <div className="sub-title">
-                  Expedited Shipping, Hot Shot Trucking, 18 Wheelers and More...
+                  Fill Out The Form For A Free Quote on Shipping
                 </div>
-                <Link to='/apply'>
-                  <input 
-                    type="button" 
-                    className="cta-button" 
-                    value="Get A Fast & Free Quote"
-                  />
-                </Link>
               </div>
             </div>
           </BackgroundImage>

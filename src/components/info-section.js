@@ -1,7 +1,7 @@
 import React from 'react'
 import '../components/mystyles.scss'
 import Card from '../components/card/Card'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 
 const InfoSection = () => {
   const data = useStaticQuery(graphql`
@@ -20,16 +20,28 @@ const InfoSection = () => {
 
   return (
     <>
-    <section className="section" style={{ margin: `0em 1em`}}>
+    <section className="section" style={{ margin: `0em 5em`}}>
       <h1 className="title">
         Trucking You Can Count On.
       </h1>
       <p className="subtitle" style={{ marginLeft: '5px'}}>
         Experienced, Reasonable, Friendly
       </p>
-        <p className="content" style={{ marginLeft: '5px'}}>If you are looking for an experienced, qualified, and licensed trucking company in Charlotte to take care of your logistic needs locally or interstate, you’ve come to the right place.  Large or small cargo, it’s best to hire a professional trucking company that has the ability to guarantee the safe delivery of your materials and freight.  We realize timely delivery of your expedited freight and materials helps to keep you projects and deadlines on target. </p>
-        <button type="button" className="button is-success" style={{ marginRight: '10px'}}>Get A Quote</button>
-        <button type="button" className="button is-info">Frequently Asked Questions</button>
+        <p className="content" style={{ marginLeft: '5px'}}>
+          If you are looking for an experienced, qualified, and licensed trucking company in Charlotte to take care of your logistic needs locally or interstate, you’ve come to the right place.  Large or small cargo, it’s best to hire a professional trucking company that has the ability to guarantee the safe delivery of your materials and freight.  We realize timely delivery of your expedited freight and materials helps to keep you projects and deadlines on target. 
+        </p>
+        <button 
+          type="button" 
+          className="button is-success" 
+          style={{ 
+            marginRight: '10px'
+          }}
+        >
+          Get A Quote
+        </button>
+        <button type="button" className="button is-info">
+          <Link className="has-text-white" to="/faq">Frequently Asked Questions</Link>
+        </button>
     </section>
     <section className="section">
       <div className="container is-fluid">

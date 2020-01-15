@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import Logo from '../components/logo'
 import './mystyles.scss'
 
 const Navbar = () => {
@@ -19,8 +18,8 @@ const Navbar = () => {
     query {
       placeholderImage: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 225) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 125) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
@@ -30,58 +29,57 @@ const Navbar = () => {
   return (
     <>
     <nav className="navbar" role="navigation" aria-label="main navigation">
-    <div className="navbar-brand navbar-item has-text-white">
-      <a
-        role="button" 
-        className={ !isActive ? "navbar-burger burger has-text-white is-active" : "navbar-burger burger has-text-white" }
-        aria-label="menu"
-        aria-expanded="false"
-        data-target="navbarBasicExample"
-        onClick={toggleNavMenu}
-      >
-        <span aria-hidden="false"></span>
-        <span aria-hidden="false"></span>
-        <span aria-hidden="false"></span>
-      </a>
-    </div>
+      <div className="navbar-brand">
+        <Link to="/"><Img fixed={data.placeholderImage.childImageSharp.fixed} /></Link>
+        <a
+          role="button" 
+          className={ !isActive ? "navbar-burger burger is-active" : "navbar-burger burger" }
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+          onClick={toggleNavMenu}
+        >
+          <span aria-hidden="false"></span>
+          <span aria-hidden="false"></span>
+          <span aria-hidden="false"></span>
+        </a>
+      </div>
     
-    <div id="navbarBasicExample" className={ !isActive ? "navbar-menu is-active" : "navbar-menu"}>
-      <div className="navbar-start">
-
-        <Link to="/">
-          <div className="navbar-item has-text-white">  
-            Home
+      <div id="navbarBasicExample" className={ !isActive ? "navbar-menu is-active" : "navbar-menu"}>
+        <div className="navbar-start">
+          <div className="navbar-item">  
+            <Link className="has-text-weight-semibold has-text-dark" to="/">
+              Home
+            </Link>
           </div>
-        </Link>
-        
-        <Link to="/about">
-          <div className="navbar-item has-text-white">  
-            About
+          <div className="navbar-item">  
+            <Link className="has-text-weight-semibold has-text-dark" to="/about">
+              About
+            </Link>
           </div>
-        </Link>
-
-        <Link to="/contact">
-          <div className="navbar-item has-text-white">  
-            Contact
+          <div className="navbar-item">  
+            <Link className="has-text-weight-semibold has-text-dark" to="/contact">
+              Contact
+            </Link>
           </div>
-        </Link>
-
-        <Link to="/apply">
-          <div className="navbar-item has-text-white">  
-            Apply
+          <div className="navbar-item">  
+            <Link className="has-text-weight-semibold has-text-dark" to="/apply">
+              Apply
+            </Link>
           </div>
-        </Link>
-
-        <Link to="/quote">
-          <div className="navbar-item has-text-white">  
-            Quote
+          <div className="navbar-item">  
+            <Link className="has-text-weight-semibold has-text-dark" to="/quote">
+              Quote
+            </Link>
           </div>
-        </Link>
+          <div className="navbar-item">  
+            <Link className="has-text-weight-semibold has-text-dark" to="/faq">
+              FAQ
+            </Link>
+          </div>
         </div>
       </div>
-
-  </nav>
-
+    </nav>
   </>
   )
 }
