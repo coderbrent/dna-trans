@@ -49,7 +49,7 @@ export default () => {
             </div>
             
             <div className="control">
-              <button className="button is-primary">Submit</button>
+              <button className="button is-success">Submit</button>
             </div>
           </form>
 

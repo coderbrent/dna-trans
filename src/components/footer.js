@@ -20,7 +20,7 @@ const Footer = ({ title }) => {
               MC: 69183
             </p>
         </div>
-        <div className="column border-left has-text-centered">
+        <div className="column has-text-centered">
           <div className="footer-links">
             <Link className="footer-items" to="/">Home</Link>
             <Link className="footer-items" to="/about">About</Link>
