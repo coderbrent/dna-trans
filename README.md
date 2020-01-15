@@ -26,7 +26,6 @@
   Some items that still need work:
 </p>
 <ul>
-  <li></li>
   <li>Finish quote form</li>
   <li>Create banners for: Contact, Apply, FAQ pages</li>
   <li>Add client-supplied questions/answers to FAQ page</li>
