@@ -20,7 +20,7 @@ const InfoSection = () => {
 
   return (
     <>
-    <section className="section" style={{ margin: `0em 5em`}}>
+    <section className="section">
       <h1 className="title">
         Trucking You Can Count On.
       </h1>
