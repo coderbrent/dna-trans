@@ -15,7 +15,7 @@ const Footer = ({ title }) => {
             <p className="content gray">
               { title }
               <p>726J Montana Drive, Charolette, NC 28216</p>
-              <p>Phone: (704) 910-4818</p>
+              <p>Phone: (704) 266-3715</p>
               DOT: 3085790
               MC: 69183
             </p>
