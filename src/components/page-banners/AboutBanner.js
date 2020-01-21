@@ -34,7 +34,7 @@ const BackgroundSection = ({ className }) => (
                 <div className="sub-title">
                   Learn More About Our History and Operations.
                 </div>
-                <Link to='/quote'><input type="button" className="cta-button" value="Get A Fast & Free Quote" /></Link>
+                <Link to='/quote'><button style={{ margin: `1em`}} type="button" className="is-medium button is-dark is-success">Get A Fast & Free Quote</button></Link>
               </div>
             </div>
           </BackgroundImage>

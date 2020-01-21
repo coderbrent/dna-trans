@@ -7,14 +7,15 @@ const DriverApp = () => {
   <div className="container is-fluid">
     <form 
       name="application"
+      action="/success"
       method="POST" 
       data-netlify-honeypot="bot-field"
-      netlify
+      netlify="true"
     >
       {/* the hidden input tag is to leverage netlify's front end form handling feature  */}
     <input 
-      type="hidden" 
-      name="form-name" 
+      type="hidden"
+      name="driver-app" 
       value="application"
     />
       
@@ -71,7 +72,7 @@ const DriverApp = () => {
           <div className="select">
             <select id="expSelect">
               <option>> 6 mos.</option>
-              <option selected>1-3</option>
+              <option defaultValue>1-3</option>
               <option>3-6</option>
               <option>6-10</option>
               <option>10-15</option>
@@ -110,13 +111,13 @@ const DriverApp = () => {
         <label htmlFor="resume" className="label">
           Upload Your Resume...
         </label>
-          <div class="notification is-danger">
+          <div className="notification is-danger">
             Accepts .pdf, .doc and .docx files <strong>only.</strong>
           </div>
           <div className="file">
             <input 
               id="resume"
-              class="file" 
+              className="file" 
               type="file" 
               name="resume" 
               accept=".pdf, .docx, .doc"

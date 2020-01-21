@@ -12,13 +12,15 @@ const Footer = ({ title }) => {
             <Logo />
           </div>
         <div className="column is-half has-text-centered">
-            <p className="content gray">
+            <h1 className="gray">
               { title }
-              <p>726J Montana Drive, Charolette, NC 28216</p>
-              <p>Phone: (704) 266-3715</p>
-              DOT: 3085790
-              MC: 69183
-            </p>
+            </h1>
+            <ul>
+              <li className="gray">726J Montana Drive, Charolette, NC 28216</li>
+              <li className="gray">Phone: (704) 266-3715</li>
+              <li className="gray">DOT: 3085790</li>
+              <li className="gray">MC: 69183</li>
+            </ul>
         </div>
         <div className="column has-text-centered">
           <div className="footer-links">

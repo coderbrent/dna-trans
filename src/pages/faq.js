@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import '../components/mystyles.scss'
 import Navbar from '../components/Navbar'
 import FAQMenu from '../components/faq-menu'
-import AboutBanner from '../components/page-banners/AboutBanner'
+import FAQBanner from '../components/page-banners/FAQBanner'
 import { graphql, useStaticQuery } from 'gatsby'
 
 export default () => {
@@ -23,7 +23,7 @@ export default () => {
   return (
     <>
     <Navbar />
-    <AboutBanner />
+    <FAQBanner />
     <Layout>
       <section className="section">
       <h1 className="title">Frequently Asked Questions</h1>

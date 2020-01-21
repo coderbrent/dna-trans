@@ -29,8 +29,7 @@ export default () => {
               About Us
             </h1>
             <p className="content">
-              DNA Transportation is a company which hold ourselves to the highest of standards at competitive rates. 
-              DNA Transportation has been providing box trucks as well as Class A trucks for many years.  Customers know their freight is in the good hands of experienced and knowledgeable truck drivers send by DNA Transportation.  With our qualified and trained drivers having tons of experience, you can rest assured your materials will be in good hands to your full satisfaction.
+              When we decided to open open our doors, we realized the need for a dependable transportation with the availability for clients to utilize modern technology to stay informed as to the status of their freight. DNA Transportation LLC is committed to utilizing all of the modern conveniences of technology to communicate the statuses of our loads. Providing trucking services in Charlotte NC is what we do best and hope to have the opportunity to have you experience the DNA Transportation difference."
             </p>
             <button type="button" className="button is-medium is-success is-dark">View Our Testimonials</button>
           </div>
