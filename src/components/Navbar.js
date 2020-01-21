@@ -77,6 +77,11 @@ const Navbar = () => {
               FAQ
             </Link>
           </div>
+          <div className="navbar-item">  
+            <Link className="has-text-weight-semibold has-text-dark" to="/areas-we-serve/aws-huntersville">
+              Areas we service
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

@@ -6,7 +6,7 @@ const DriverApp = () => {
   <>
   <div className="container is-fluid">
     <form 
-      name="application" 
+      name="application"
       method="POST" 
       data-netlify-honeypot="bot-field"
       netlify
@@ -107,9 +107,12 @@ const DriverApp = () => {
 
       <div className="field is-grouped">
         <div className="control">
-        <label htmlFor ="resume"className="label">
+        <label htmlFor="resume" className="label">
           Upload Your Resume...
         </label>
+          <div class="notification is-danger">
+            Accepts .pdf, .doc and .docx files <strong>only.</strong>
+          </div>
           <div className="file">
             <input 
               id="resume"
@@ -124,13 +127,8 @@ const DriverApp = () => {
 
       <div className="field is-grouped">
         <div className="control">
-          <button type="submit" className="button is-link">
+          <button type="submit" className="button is-success is-large">
             Submit
-          </button>
-        </div>
-        <div className="control">
-          <button className="button is-link is-light">
-            Cancel
           </button>
         </div>
       </div>

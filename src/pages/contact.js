@@ -13,8 +13,12 @@ export default () => {
         <h1 className="title">
           Contact Us
         </h1>
-  {/* STYLING: if a tag has more than 2! attributes, return each attr to a new line */}
-          <form>
+          <form method="post"
+            name="contact"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
+            <input type="hidden" name="bot-field" />
             <div className="field">
             <label className="label" htmlFor="name">Name</label>
               <div className="control" id="name">
@@ -49,7 +53,9 @@ export default () => {
             </div>
             
             <div className="control">
-              <button className="button is-success">Submit</button>
+              <button type="submit" className="button is-success">
+                Submit
+              </button>
             </div>
           </form>
 
