@@ -12,7 +12,7 @@ const FAQMenu = ({ answers, questions }) => {
     }
   }
 
-  return(
+  return (
     <>
     <div 
       className="box que is-radiusless" 
