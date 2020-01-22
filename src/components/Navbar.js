@@ -15,15 +15,20 @@ const Navbar = () => {
   }
 
   const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "logo.png" }) {
-        childImageSharp {
-          fixed(width: 125) {
-            ...GatsbyImageSharpFixed
-          }
+  {
+    placeholderImage: file(relativePath: {eq: "logo.png"}) {
+      childImageSharp {
+        fixed(width: 125) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
+    allContentJson {
+      nodes {
+        cities
+      }
+    }
+  }
   `)
 
   return (
@@ -47,59 +52,43 @@ const Navbar = () => {
     
       <div id="navbarBasicExample" className={ !isActive ? "navbar-menu is-active" : "navbar-menu"}>
         <div className="navbar-start">
-          <div>
-            <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/">
-              Home
+          <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/">
+            Home
+          </Link>
+          <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/about">
+            About
+          </Link>
+          <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/contact">
+            Contact
+          </Link>
+          <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/apply">
+            Apply
+          </Link>
+          <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/quote">
+            Quote
+          </Link>
+          <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/faq">
+            FAQ
+          </Link>
+        <div className="navbar-item has-dropdown is-hoverable">
+          <a className="navbar-link has-text-weight-semibold has-text-dark" href="#">
+            Areas We Service
+          </a>
+        <div className="navbar-dropdown">
+          { data.allContentJson.nodes[0].cities.map((el, i) => (
+            <Link
+              key={i} 
+              className="navbar-item has-text-weight-semibold has-text-dark"
+              to={`areas-we-serve/${el}`}  
+            > 
+              {el}
             </Link>
-          </div>
-          <div>  
-            <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/about">
-              About
-            </Link>
-          </div>
-          <div>  
-            <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/contact">
-              Contact
-            </Link>
-          </div>
-          <div>  
-            <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/apply">
-              Apply
-            </Link>
-          </div>
-          <div>  
-            <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/quote">
-              Quote
-            </Link>
-          </div>
-          <div>  
-            <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/faq">
-              FAQ
-            </Link>
-          </div>
-          <div className="has-dropdown is-hoverable">
-        <a className="navbar-link has-text-weight-semibold has-text-dark" href="#">
-          Areas We Service
-        </a>
-      <div className="navbar-dropdown">
-        <div>
-          <Link className="navbar-item" to="/areas-we-serve/aws-huntersville">Huntersville</Link>
+          )) }
         </div>
-        <div>
-          <Link className="navbar-item" to="/areas-we-serve/aws-charlotte">Charlotte</Link>
-        </div>
-        <div>
-          <Link className="navbar-item" to="/areas-we-serve/aws-Raleigh">Raleigh</Link>
-        </div>
-      <hr className="navbar-divider" />
-      <div className="navbar-item">
-        Report an issue
-      </div>
-    </div>
-    </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
   </>
   )
 }
