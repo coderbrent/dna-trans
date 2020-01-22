@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import QuestionSvg from './svg/questionsvg'
+import AnswerSvg from './svg/answersvg'
 import '../components/mystyles.scss'
 
 const FAQMenu = ({ answers, questions }) => {
@@ -24,17 +26,24 @@ const FAQMenu = ({ answers, questions }) => {
     >
       <div className="question">
         { questions }
+        <QuestionSvg fill="grey"/>
       </div>
     </div>
     <div
-      className={ visible ? "notification is-success is-radiusless" : "hidden" } 
+      className={ 
+        visible ? "answer notification is-success is-radiusless" 
+        : "hidden" 
+      } 
       style={{ margin: `2px`}}
       onClick={toggleAnswer}
       onKeyDown={toggleAnswer}
       role="button"
       tabIndex="0"
     >
-      { answers }
+      <div className="answer">
+        { answers }
+        <AnswerSvg fill="white" style={{ margin: `0em -1em`}}/>
+      </div>
     </div>
     </>
   )

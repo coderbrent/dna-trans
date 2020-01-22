@@ -34,7 +34,18 @@ const BackgroundSection = ({ className }) => (
                 <div className="sub-title">
                   
                 </div>
-                <Link to='/quote'><button style={{ margin: `1em`}} type="button" className="is-medium button is-dark is-success">Get A Fast & Free Quote</button></Link>
+                <Link 
+                  to='/quote'
+                >
+                  <button 
+                    style={{ 
+                      margin: `1em`
+                    }} 
+                    type="button" 
+                    className="is-medium button is-dark is-success">
+                      Get A Fast & Free Quote
+                  </button>
+                </Link>
               </div>
             </div>
           </BackgroundImage>

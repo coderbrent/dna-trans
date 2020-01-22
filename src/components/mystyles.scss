@@ -48,14 +48,30 @@ $family-sans-serif: "Ubuntu", sans-serif;
   color: white;
 }
 
-.answer-box {
-  background-color: lightgray;
+.question {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  user-select: none;
+}
+
+.answer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  user-select: none;
 }
 
 .que:hover {
-  background-color: rgb(123, 123, 123);
-  color: white;
+  background-color: rgb(231, 231, 231);
   font-weight: bolder;
+  cursor: pointer;
+}
+
+.answer:hover {
+  cursor: pointer;
 }
 
 .hidden {

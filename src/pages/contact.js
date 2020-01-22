@@ -19,7 +19,7 @@ export default () => {
     <Layout>
       <div className="section">
         <h1 className="title">
-          Contact Us
+          Contact Us 
         </h1>
           {/* { visible ? <div className="box">Your message was sent!</div> : null } */}
           <form method="post"

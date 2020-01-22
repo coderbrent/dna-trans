@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import TruckSvg from '../components/trucksvg'
+import TruckSvg from '../components/svg/trucksvg'
 
 export default() => {
   return (

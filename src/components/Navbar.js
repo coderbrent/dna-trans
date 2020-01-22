@@ -33,9 +33,15 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav 
+      className="navbar" 
+      role="navigation" 
+      aria-label="main navigation"
+    >
       <div className="navbar-brand" style={{ alignItems: 'center'}}>
-        <Link to="/"><Img fixed={data.placeholderImage.childImageSharp.fixed} /></Link>
+        <Link to="/">
+          <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+        </Link>
         <button
           style={{ border: 'none', backgroundColor: 'transparent'}}
           className={ !isActive ? "navbar-burger burger is-active" : "navbar-burger burger" }
@@ -78,7 +84,7 @@ const Navbar = () => {
           { data.allContentJson.nodes[0].cities.map((el, i) => (
             <Link
               key={i} 
-              className="navbar-item has-text-weight-semibold has-text-dark"
+              className="navbar-item has-text-dark"
               to={`areas-we-serve/${el}`}  
             > 
               {el}
