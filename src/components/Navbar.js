@@ -92,9 +92,9 @@ const Navbar = () => {
             <Link
               key={i}
               className="navbar-item has-text-dark"
-              to={`areas-we-serve/${el.node.frontmatter.path}`}  
+              to={`/${el.node.frontmatter.path}`}
             > 
-              {el.node.frontmatter.path}
+              { el.node.frontmatter.path.replace(/["/"]/, '') }
             </Link>
           )) }
         </div>

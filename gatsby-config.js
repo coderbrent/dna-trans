@@ -49,7 +49,13 @@ module.exports = {
         trackingId: "UA-156186170-1",
       },
     },
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        enableIdentityWidget: true
+      }
+    },
+    
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
