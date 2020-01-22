@@ -1,6 +1,6 @@
 import React from "react"
 import Img from 'gatsby-image'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import AboutBanner from '../../components/page-banners/AboutBanner'
 import Navbar from '../../components/Navbar'
 import Layout from '../../components/layout'
@@ -40,7 +40,15 @@ export default () => {
               <li style={{ listStyleType: 'disc'}}>Special Instructions</li>
               <li style={{ listStyleType: 'disc'}}>Open Lines of Communication</li>
             </ul>
-            <button type="button" className="button is-medium is-success is-dark">Frequently Asked Questions</button>
+            <Link to="/faq">
+              <button 
+                type="button" 
+                className="button is-medium is-success is-dark"
+              >
+              
+                 Frequently Asked Questions
+              </button>
+            </Link>
           </div>
           <div className="column">
             <Img

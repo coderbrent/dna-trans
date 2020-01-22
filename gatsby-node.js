@@ -1,23 +1,33 @@
-// exports.createPages = async function({ actions, graphql }) {
-//   const { data } = await graphql(`
-//     query {
-//       allMarkdownRemark {
-//         edges {
-//           node {
-//             fields {
-//               slug
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `)
-//   data.allMarkDownRemark.edges.forEach(edge => {
-//     const slug = edge.node.fields.slug
-//     actions.createPage({
-//       path: slug,
-//       component: require.resolve(`./src/templates/aws-temp.js`),
-//       context: { slug: slug },
-//     })
-//   })
-// }
+const path = require('path')
+
+exports.createPages = async function({ actions, graphql, reporter }) {
+  const { createPage } = actions
+  const siloPageTemplate = path.resolve(`src/templates/silo-page.js`)
+  const result = await graphql(`
+  {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 1000
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
+          }
+        }
+      }
+    }
+  }
+  `)
+  if(result.errors) {
+    reporter.panicOnBuild(`Error running gql query`)
+    return
+  }
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: siloPageTemplate,
+      context: {},
+    })
+  })
+}

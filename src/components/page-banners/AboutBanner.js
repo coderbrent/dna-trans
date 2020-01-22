@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 import '../mystyles.scss'
 
-const BackgroundSection = ({ className }) => (
+const BackgroundSection = ({ className, title }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -25,11 +25,12 @@ const BackgroundSection = ({ className }) => (
             Tag="section"
             className={className}
             fluid={imageData}
+            heading={title}
           >
             <div className="container is-fluid">
               <div className="display">
                 <div className="display-title">
-                  27 Years of Combined Experience in Trucking.
+                  { title }
                 </div>
                 <div className="sub-title">
                   Learn More About Our History and Operations.
