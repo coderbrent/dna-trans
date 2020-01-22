@@ -78,23 +78,23 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="navbar-item has-dropdown is-hoverable">
-        <a className="navbar-link has-text-weight-semibold has-text-dark">
+        <a className="navbar-link has-text-weight-semibold has-text-dark" href="#">
           Areas We Service
-        </a>  
+        </a>
       <div className="navbar-dropdown">
-        <div className="navbar-item">
-          <Link to="/areas-we-serve/aws-huntersville">Huntersville</Link>
+        <div>
+          <Link className="navbar-item" to="/areas-we-serve/aws-huntersville">Huntersville</Link>
         </div>
-        <a className="navbar-item">
-          Jobs
-        </a>
-        <a className="navbar-item">
-          Contact
-        </a>
+        <div>
+          <Link className="navbar-item" to="/areas-we-serve/aws-charlotte">Charlotte</Link>
+        </div>
+        <div>
+          <Link className="navbar-item" to="/areas-we-serve/aws-Raleigh">Raleigh</Link>
+        </div>
       <hr className="navbar-divider" />
-      <a className="navbar-item">
+      <div className="navbar-item">
         Report an issue
-      </a>
+      </div>
     </div>
     </div>
         </div>

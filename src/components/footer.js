@@ -2,16 +2,19 @@ import React from 'react'
 import '../components/mystyles.scss'
 import { Link } from 'gatsby'
 import Logo from '../components/logo'
+import TwitterSvg from '../components/twittersvg'
+import InstagramSvg from '../components/instagramsvg'
+import FbSvg from '../components/facebooksvg'
 
 const Footer = ({ title }) => {
   return (
     <>
       <div className="footer">
         <div className="columns">
-          <div className="column has-text-centered">
+          <div className="column has-text-centered is-3">
             <Logo />
           </div>
-        <div className="column is-half has-text-centered">
+        <div className="column is-half has-text-centered is-3">
             <h1 className="gray">
               { title }
             </h1>
@@ -22,7 +25,14 @@ const Footer = ({ title }) => {
               <li className="gray">MC: 69183</li>
             </ul>
         </div>
-        <div className="column has-text-centered">
+        <div className="column has-text-centered is-3">
+          <ul className="social-links">
+            <li className="social-links-item"><TwitterSvg /></li>
+            <li className="social-links-item"><FbSvg /></li>
+            <li className="social-links-item"><InstagramSvg /></li>
+          </ul>
+        </div>
+        <div className="column has-text-centered is-3">
           <div className="footer-links">
             <Link className="footer-items" to="/">Home</Link>
             <Link className="footer-items" to="/about">About</Link>

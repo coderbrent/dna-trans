@@ -1,12 +1,11 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
 @import url("https://fonts.googleapis.com/css?family=Alata:400,700");
+@import "~bulma/bulma.sass";
 $title-color: #181818;
 $title-family: "Alata";
 $title-size: 2.75rem;
 $title-main-color: rgb(36, 36, 36);
-
-@import "~bulma/bulma.sass";
 
 $purple: rgb(138, 77, 77);
 $pink: #fa7c91;
@@ -49,25 +48,6 @@ $family-sans-serif: "Ubuntu", sans-serif;
   color: white;
 }
 
-.cta-button {
-  font-family: "Ubuntu";
-  font-weight: 600;
-  font-size: smaller;
-  padding: 0.35em 0.5em;
-  margin: 1em 0em;
-  border-radius: 3pt;
-  font-size: 1.25rem;
-  font-variant-caps: all-small-caps;
-  background-color: hsl(141, 71%, 48%);
-  color: rgb(255, 255, 255);
-  border: none;
-  z-index: 10;
-}
-
-.cta-button:hover {
-  background-color: darkgreen;
-}
-
 .answer-box {
   background-color: lightgray;
 }
@@ -96,4 +76,15 @@ $family-sans-serif: "Ubuntu", sans-serif;
   font-weight: 400;
   color: #b5b5b5;
   font-variant-caps: small-caps;
+}
+
+.social-links {
+  display: inline-flex;
+  align-items: center;
+  justify-items: flex-end;
+  fill: #757763;
+}
+
+.social-links-item {
+  margin: 0rem .5rem;
 }

@@ -5,7 +5,8 @@ const DriverApp = () => {
   return (
   <>
   <div className="container is-fluid">
-    <form 
+    <form
+      className="has-background-light" 
       name="application"
       action="/success"
       method="POST" 
@@ -108,12 +109,12 @@ const DriverApp = () => {
 
       <div className="field is-grouped">
         <div className="control">
+        <div className="notification is-danger">
+          Accepts .pdf, .doc and .docx files <strong>only.</strong>
+        </div>
         <label htmlFor="resume" className="label">
           Upload Your Resume...
         </label>
-          <div className="notification is-danger">
-            Accepts .pdf, .doc and .docx files <strong>only.</strong>
-          </div>
           <div className="file">
             <input 
               id="resume"
