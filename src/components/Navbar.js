@@ -47,37 +47,37 @@ const Navbar = () => {
     
       <div id="navbarBasicExample" className={ !isActive ? "navbar-menu is-active" : "navbar-menu"}>
         <div className="navbar-start">
-          <div className="navbar-item">  
-            <Link className="has-text-weight-semibold has-text-dark" to="/">
+          <div>
+            <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/">
               Home
             </Link>
           </div>
-          <div className="navbar-item">  
-            <Link className="has-text-weight-semibold has-text-dark" to="/about">
+          <div>  
+            <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/about">
               About
             </Link>
           </div>
-          <div className="navbar-item">  
-            <Link className="has-text-weight-semibold has-text-dark" to="/contact">
+          <div>  
+            <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/contact">
               Contact
             </Link>
           </div>
-          <div className="navbar-item">  
-            <Link className="has-text-weight-semibold has-text-dark" to="/apply">
+          <div>  
+            <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/apply">
               Apply
             </Link>
           </div>
-          <div className="navbar-item">  
-            <Link className="has-text-weight-semibold has-text-dark" to="/quote">
+          <div>  
+            <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/quote">
               Quote
             </Link>
           </div>
-          <div className="navbar-item">  
-            <Link className="has-text-weight-semibold has-text-dark" to="/faq">
+          <div>  
+            <Link className="navbar-item has-text-weight-semibold has-text-dark" to="/faq">
               FAQ
             </Link>
           </div>
-          <div className="navbar-item has-dropdown is-hoverable">
+          <div className="has-dropdown is-hoverable">
         <a className="navbar-link has-text-weight-semibold has-text-dark" href="#">
           Areas We Service
         </a>
