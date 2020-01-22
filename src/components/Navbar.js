@@ -23,9 +23,16 @@ const Navbar = () => {
         }
       }
     }
-    allContentJson {
-      nodes {
-        cities
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 1000
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
+          }
+        }
       }
     }
   }
@@ -81,13 +88,13 @@ const Navbar = () => {
             Areas We Service
           </a>
         <div className="navbar-dropdown">
-          { data.allContentJson.nodes[0].cities.map((el, i) => (
+          { data.allMarkdownRemark.edges.map((el, i) => (
             <Link
-              key={i} 
+              key={i}
               className="navbar-item has-text-dark"
-              to={`areas-we-serve/${el}`}  
+              to={`areas-we-serve/${el.node.frontmatter.path}`}  
             > 
-              {el}
+              {el.node.frontmatter.path}
             </Link>
           )) }
         </div>
