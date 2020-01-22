@@ -17,8 +17,8 @@ collections:
       - { name: body, label: Body, widget: markdown }
   - name: silo
     label: Silo Page
-    folder: /pages/markdown-pages
-    create: false
+    folder: src/markdown-pages
+    create: true
     fields:
       - { name: path, label: Path }
       - { name: title, label: Title }
