@@ -26,14 +26,14 @@ const FAQMenu = ({ answers, questions }) => {
     >
       <div className="question">
         { questions }
-        <QuestionSvg fill="grey"/>
+        <QuestionSvg className="spinningButton" />
       </div>
     </div>
     <div
       className={ 
         visible ? "answer notification is-success is-radiusless" 
         : "hidden" 
-      } 
+      }
       style={{ margin: `2px`}}
       onClick={toggleAnswer}
       onKeyDown={toggleAnswer}
@@ -42,7 +42,7 @@ const FAQMenu = ({ answers, questions }) => {
     >
       <div className="answer">
         { answers }
-        <AnswerSvg fill="white" style={{ margin: `0em -1em`}}/>
+        <AnswerSvg style={{ margin: `0em -1em`}}/>
       </div>
     </div>
     </>

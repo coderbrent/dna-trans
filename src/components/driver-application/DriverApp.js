@@ -4,9 +4,10 @@ import '../mystyles.scss'
 const DriverApp = () => {
   return (
   <>
-  <div className="container is-fluid">
+  <div className="container">
     <form
-      className="has-background-light" 
+      className="has-background-light"
+      style={{ padding: `2rem` }}
       name="application"
       action="/success"
       method="POST" 

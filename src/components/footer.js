@@ -2,9 +2,9 @@ import React from 'react'
 import '../components/mystyles.scss'
 import { Link } from 'gatsby'
 import Logo from '../components/logo'
-import TwitterSvg from '../components/twittersvg'
-import InstagramSvg from '../components/instagramsvg'
-import FbSvg from '../components/facebooksvg'
+import TwitterSvg from './svg/twittersvg'
+import InstagramSvg from './svg/instagramsvg'
+import FbSvg from './svg/facebooksvg'
 
 const Footer = ({ title }) => {
   return (
@@ -14,7 +14,10 @@ const Footer = ({ title }) => {
           <div className="column has-text-centered is-3">
             <Logo />
           </div>
-        <div className="column is-half has-text-centered is-3">
+        <div 
+          className="column has-text-centered is-3"
+          style={{ padding: `12px`}}
+          >
             <h1 className="gray">
               { title }
             </h1>
@@ -26,10 +29,24 @@ const Footer = ({ title }) => {
             </ul>
         </div>
         <div className="column has-text-centered is-3">
+          <p 
+            style={{ 
+              marginBottom: `.9em`,
+              color: `grey`
+            }}
+          >
+            Visit us on social media!
+          </p>
           <ul className="social-links">
-            <li className="social-links-item"><TwitterSvg /></li>
-            <li className="social-links-item"><FbSvg /></li>
-            <li className="social-links-item"><InstagramSvg /></li>
+            <Link className="social-links-item">
+              <TwitterSvg />
+            </Link>
+            <Link className="social-links-item">
+              <FbSvg />
+            </Link>
+            <Link className="social-links-item">
+              <InstagramSvg />
+            </Link>
           </ul>
         </div>
         <div className="column has-text-centered is-3">

@@ -2,10 +2,12 @@ import React from "react"
 import Layout from '../components/layout'
 import DriverApp from '../components/driver-application/DriverApp'
 import Navbar from '../components/Navbar'
+import ApplyBanner from '../components/page-banners/ApplyBanner'
 
 export default () => (
   <>
   <Navbar />
+  <ApplyBanner />
   <Layout>
     <div className="section padding-medium" style={{ marginBottom: `1em`}}>
       <h1 className="title">Apply To Drive</h1>

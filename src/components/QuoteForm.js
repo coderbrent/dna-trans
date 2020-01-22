@@ -48,7 +48,7 @@ const QuoteForm = () => {
             </div>
           </div>
           <div className="column">
-            Column 2
+
           </div>
         </div>
     </form>

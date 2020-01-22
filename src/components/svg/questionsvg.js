@@ -8,6 +8,7 @@ const QuestionSvg = props => (
     xmlSpace="preserve"
     width="20pt"
     height="20pt"
+    fill="grey"
     {...props}
   >
     <circle cx={256} cy={378.5} r={25} />
