@@ -4,12 +4,11 @@ import AboutBanner from "../components/page-banners/AboutBanner";
 import Navbar from "../components/Navbar";
 
 export default () => {
-  const [ visible, setVisible ] = useState(false)
+  const [statusMsg, setStatusMsg] = useState(false)
 
-  const handleMessage = event => {
-    event.preventDefault();
-    console.log('swhing!')
-    setVisible(true)
+  const handleMessage = e => {
+    e.preventDefault();
+    setStatusMsg(true)
   }
 
   return (
@@ -21,16 +20,25 @@ export default () => {
         <h1 className="title">
           Contact Us 
         </h1>
-          {/* { visible ? <div className="box">Your message was sent!</div> : null } */}
-          <form method="post"
+          <form 
+            method="post"
+            // onSubmit={handleMessage}
             name="contact"
             netlify-honeypot="bot-field"
-            netlify
-            action="/success"
+            data-netlify="true"
           >
             <input type="hidden" name="bot-field" />
+            { statusMsg ? 
+              <div className="notification is-primary">
+              <button 
+                onClick={()=> setStatusMsg(false)} 
+                class="delete">
+              </button>
+                Your message was successfully submitted!
+              </div> : null
+            }
             <div className="field">
-            <label className="label" htmlFor="name">Name</label>
+            <label className="label" htmlFor="name">Name *</label>
               <div className="control" id="name">
                 <input 
                   className="input" 
@@ -41,7 +49,7 @@ export default () => {
             </div>
 
             <div className="field">
-            <label className="label" htmlFor="email">E-Mail</label>
+            <label className="label" htmlFor="email">E-Mail *</label>
               <div className="control" id="email">
                 <input 
                   className="input" 
@@ -52,18 +60,20 @@ export default () => {
             </div>
 
             <div className="field">
-            <label className="label" htmlFor="message">Message</label>
+            <label className="label" htmlFor="message">Message *</label>
               <div className="control">
                 <textarea 
                   className="textarea" 
                   id="message" 
-                  placeholder="Drop us a line!">
+                  placeholder="Drop us a line!"
+                  required
+                >
                 </textarea>
               </div>
             </div>
 
             <div className="control">
-              <input type="submit" onSubmit={handleMessage} className="button is-success" />
+              <button type="submit" className="button is-success">Submit</button>
             </div>
           </form>
 

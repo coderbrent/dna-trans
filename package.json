@@ -33,6 +33,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
+    "sharp": "^0.24.0",
     "styled-components": "^4.4.1",
     "typography": "^0.16.19",
     "typography-theme-fairy-gates": "^0.16.19",
