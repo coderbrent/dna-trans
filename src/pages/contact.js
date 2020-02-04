@@ -22,7 +22,7 @@ export default () => {
         </h1>
           <form 
             method="post"
-            // onSubmit={handleMessage}
+            onSubmit={handleMessage}
             name="contact"
             netlify-honeypot="bot-field"
             data-netlify="true"
