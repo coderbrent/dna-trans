@@ -1,5 +1,5 @@
 ---
-path: /charlotte
+path: /Charlotte
 title: Charlotte North Carolina Trucking
 ---
 ## **Contact Us About Our Charlotte NC Trucking Company**
