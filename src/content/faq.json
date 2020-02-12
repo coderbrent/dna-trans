@@ -6,17 +6,17 @@
   },
   {
     "id": 2,
-    "question": "Where are you located?",
-    "answer": "Charolette, NC"
+    "question": "Can the quoted rate change?",
+    "answer": ""
   },
   {
     "id": 3,
-    "question": "What are your hours?",
-    "answer": "24/7"
+    "question": "Are there any additional fees?",
+    "answer": ""
   },
   {
     "id": 4,
-    "question": "What is your favorite color?",
-    "answer": "blue!...no yellow! ahhhhhhh!!"
+    "question": "What form of payment do you accept?",
+    "answer": ""
   }
 ]
