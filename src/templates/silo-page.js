@@ -16,7 +16,6 @@ export default function Template({
     <Layout>
       <div className="section">
       <div className="content">
-        <h2>{frontmatter.date}</h2>
       </div>
       <div 
         className="content"
@@ -32,7 +31,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path }}) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         path
         title
       }

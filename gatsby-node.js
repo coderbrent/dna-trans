@@ -6,7 +6,7 @@ exports.createPages = async function({ actions, graphql, reporter }) {
   const result = await graphql(`
   {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { order: DESC, fields: [frontmatter___path] }
       limit: 1000
     ) {
       edges {
