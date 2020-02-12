@@ -7,31 +7,19 @@ title: Trucking Company in Allen NC?
 \
 There are a couple of things you would need to determine before you start your online search for a Allen NC Trucking company. Here are some details you would definitely would be:
 
-
-
 * What is the total size of the freight needing to me moved? Believe it or not there is a right way and a wrong way to measure freight.
 * Then you would need to figure out the total weight
 * WIth the size and weight you should be able to provide this information to the shipping professional to determine what size trailer and vehicle for the haul
 * What is the timeline in terms of pickup until delivery?
 * Are there any special considerations? I.e. refrigeration
 
-
-
 There are many factors a trucking company in Allen NC may use to provide you pricing information, therefore it would probably be best to contact them over the phone to get all of your questions addressed.
-
-
 
 DNA Transportation posses over 27 years of combined years of experience in shipping in and around Charlotte NC. Staying in touch with our clients every step of the way is what has allowed us to grow from a single truck to a multi vehicle fleet.
 
-
-
 As a member of OOIDA, the we are committed to adhering to industry standards and are committed to the safety of our drivers, our fleets, and our clients containers.
 
-
-
 Whether your business is needing shipping services Allen NC or if you’re looking for a trucking company in Allen NC, we would be happy to discuss the benefits of a DNA Transportation relationship.
-
-
 
 Office Hours
 
@@ -49,9 +37,7 @@ Friday 8:00 - 5:00
 
 Saturday Closed
 
-
-
-Trucking Services Allen NC We Provide:
+### Trucking Services Allen NC We Provide:
 
 * Allen NC Expedited Trucking
 * Over The Road Trucking in Allen NC
@@ -64,8 +50,6 @@ Proudly Serving:
 * [Huntersville, NC](https://www.huntersville.org/)
 * [Belmont, NC](https://www.cityofbelmont.org/)
 * [Allen, NC](https://northcarolina.hometownlocator.com/nc/mecklenburg/allen.cfm)
-
-
 
 Nearby Places
 
