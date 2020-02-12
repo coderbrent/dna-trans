@@ -18,7 +18,7 @@ DNA Transportation utilizes the latest in dispatching software combined with the
 
 At any moment one of our team members will be able to get a real time accurate location on your freight. In addition we will be able to monitor the condition of the trucks functionality. We will get alerts regarding the drivers speed, as well as be able to see with two way camera systems what the driver is doing and looking at.
 
-### For more information about how DNA can assist you, contact us at(704) 266-3715or email us at
+### For more information about how DNA can assist you, contact us at (704) 266-3715 or email us at
 
 ### info@dnatrans.com
 
