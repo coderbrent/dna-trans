@@ -2,11 +2,7 @@
 path: /charlotte
 title: Charlotte North Carolina Trucking
 ---
-# Charlotte North Carolina Trucking
-
-
-
-**Contact Us About Our Charlotte NC Trucking Company**
+## **Contact Us About Our Charlotte NC Trucking Company**
 
 **(704) 266-3715**
 
