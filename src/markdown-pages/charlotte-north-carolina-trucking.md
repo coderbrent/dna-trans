@@ -37,7 +37,7 @@ As DNA Transportation has continued to expand we have been building our service 
 
 
 
-Office Hours
+**Office Hours**
 
 Sunday Closed
 
@@ -55,7 +55,7 @@ Saturday Closed
 
 
 
-We Provide the following services:(Link to pages to be created in services provided)
+We Provide the following services:
 
 * Expedited Shipping Services Charlotte NC
 * General Freight Courier Service Charlotte NC
