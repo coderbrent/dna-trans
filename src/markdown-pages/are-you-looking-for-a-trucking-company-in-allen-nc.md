@@ -1,5 +1,5 @@
 ---
-path: Allen
+path: /Allen
 title: Trucking Company in Allen NC
 ---
 ## Looking for a trucking company in Allen NC can be a daunting task as Allen NC has trucking companies that come in all shapes and sizes.
