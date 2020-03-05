@@ -4,7 +4,6 @@ title: Trucking Company in Allen NC
 ---
 ## Looking for a trucking company in Allen NC can be a daunting task as Allen NC has trucking companies that come in all shapes and sizes.
 
-\
 There are a couple of things you would need to determine before you start your online search for a Allen NC Trucking company. Here are some details you would definitely would be:
 
 * What is the total size of the freight needing to me moved? Believe it or not there is a right way and a wrong way to measure freight.
