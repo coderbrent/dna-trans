@@ -14,7 +14,7 @@ const DriverApp = () => {
       data-netlify-honeypot="bot-field"
       netlify="true"
     >
-      {/* the hidden input tag is to leverage netlify's front end form handling feature  */}
+      
     <input 
       type="hidden"
       name="driver-app" 

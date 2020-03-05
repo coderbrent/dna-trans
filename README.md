@@ -18,7 +18,6 @@
   <li>Server Side Rendering</li>
   <li>Google Analytics plugin</li>
   <li>Gatsby-Image plugin</li>
-  <li>GraphQL content querying (sourced from client-side JSON files)</li>
 </ul>
 
 <h4>TODO:</h4>
@@ -31,7 +30,6 @@
   <li>Add client-supplied questions/answers to FAQ page</li>
   <li>Continue to move hard-coded content into JSON files (see content folder)</li>
   <li>Further compress heavier images</li>
-  <li>Add social media link/icons to footer</li>
   <li>Specify Bulma component imports to trim down bundle (see mystyles.scss)</li>
 </ul>
 

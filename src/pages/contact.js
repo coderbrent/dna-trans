@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Layout from "../components/layout"
-import AboutBanner from "../components/page-banners/AboutBanner";
+import ContactBanner from "../components/page-banners/ContactBanner";
 import Navbar from "../components/Navbar";
 
 export default () => {
@@ -14,11 +14,11 @@ export default () => {
   return (
   <>
   <Navbar />
-  <AboutBanner />
+  <ContactBanner />
     <Layout>
       <div className="section">
         <h1 className="title">
-          Contact Us 
+          Contact Us
         </h1>
           <form 
             method="post"

@@ -15,12 +15,9 @@ export default function Template({
     <AboutBanner title={frontmatter.title}/>
     <Layout>
       <div className="section">
-      <div className="content">
-      </div>
-      <div 
-        className="content"
+      <div className="content"
         dangerouslySetInnerHTML={{ __html: html }}
-      />    
+      />
       </div>
     </Layout>
     </>

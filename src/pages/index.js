@@ -38,13 +38,13 @@ const IndexPage = () => {
     <SEO title="Home" />
     <section className="section">
       <h1 className="title">
-        { data.allHomeJson.edges[1].node.nodeContent }
+        Trucking You Can Count On.
       </h1>
       <p className="subtitle" style={{ marginLeft: '5px'}}>
-        { data.allHomeJson.edges[2].node.nodeContent }
+        Experienced, Reasonable, Friendly
       </p>
         <p className="content" style={{ marginLeft: '5px'}}>
-          { data.allHomeJson.edges[0].node.nodeContent }
+          If you are looking for an experienced, qualified, and licensed trucking company in Charlotte to take care of your logistic needs locally or interstate, you’ve come to the right place.  Large or small cargo, it’s best to hire a professional trucking company that has the ability to guarantee the safe delivery of your materials and freight.  We realize timely delivery of your expedited freight and materials helps to keep you projects and deadlines on target.
         </p>
         <button 
           type="button" 
@@ -73,17 +73,17 @@ const IndexPage = () => {
           <div className="column">
             <Card 
               fluid={data.allImageSharp.edges[6].node.fluid} 
-              title={ data.allHomeJson.edges[6].node.nodeContent }
-              subTitle={ data.allHomeJson.edges[7].node.nodeContent }
-              content={ data.allHomeJson.edges[8].node.nodeContent }
+              title={data.allHomeJson.edges[6].node.nodeContent}
+              subTitle={data.allHomeJson.edges[7].node.nodeContent}
+              content={data.allHomeJson.edges[8].node.nodeContent}
             />
           </div>
           <div className="column">
             <Card 
               fluid={data.allImageSharp.edges[7].node.fluid} 
-              title={ data.allHomeJson.edges[9].node.nodeContent }
-              subTitle={ data.allHomeJson.edges[10].node.nodeContent }
-              content={ data.allHomeJson.edges[11].node.nodeContent }
+              title={data.allHomeJson.edges[9].node.nodeContent}
+              subTitle={data.allHomeJson.edges[10].node.nodeContent}
+              content={data.allHomeJson.edges[11].node.nodeContent}
             />
           </div>
         </div>
